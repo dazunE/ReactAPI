@@ -1,1 +1,1 @@
-Simple React Application based on Weather MAP API
+React Weather Application

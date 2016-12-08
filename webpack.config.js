@@ -3,15 +3,16 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
-    'script!bootstrap/dist/js/bootstrap.min.js',
-    'script!bootstrap-material-design/dist/js/material.min.js',
-    './app/app.jsx',
+    'script!foundation-sites/dist/foundation.min.js',
+    './app/app.jsx'
   ],
-  externals:'jQuery',
+  externals: {
+    jquery: 'jQuery'
+  },
   plugins: [
     new webpack.ProvidePlugin({
-      '$':'jquery',
-      'jQuery':'jquery'
+      '$': 'jquery',
+      'jQuery': 'jquery'
     })
   ],
   output: {
